@@ -29,7 +29,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
-  $stateProvider.state('reviews.read', {
+  $stateProvider.state('reviews.display', {
     url:"/:reviewId",
     views: {
       'header':{
@@ -37,7 +37,11 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
         controller: "HeadersCtrl",
       },
       'body':{
-        templateUrl: "partials/reviews.read.html",
+        templateUrl: "partials/reviews.html",
+        controller: "ReviewsCtrl",
+      },
+      'display-review':{
+        templateUrl: "partials/reviews.display.html",
         controller: "ReviewsCtrl",
       },
     }

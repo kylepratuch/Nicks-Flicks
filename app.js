@@ -16,7 +16,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('reviews', {
-    url:"",
+    url:"reviews",
     views: {
       'header':{
         templateUrl: "partials/header.html",
@@ -24,6 +24,20 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       },
       'body':{
         templateUrl: "partials/reviews.html",
+        controller: "ReviewsCtrl",
+      },
+    }
+  });
+
+  $stateProvider.state('reviews.read', {
+    url:"/:reviewId",
+    views: {
+      'header':{
+        templateUrl: "partials/header.html",
+        controller: "HeadersCtrl",
+      },
+      'body':{
+        templateUrl: "partials/reviews.read.html",
         controller: "ReviewsCtrl",
       },
     }

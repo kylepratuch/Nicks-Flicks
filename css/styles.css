@@ -3,5 +3,6 @@ body {
 }
 
 .inverted{
-  filter: invert(100%);
+  background-color:black;
+  color:white;
 }

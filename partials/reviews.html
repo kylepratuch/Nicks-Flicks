@@ -1,15 +1,15 @@
 <div class="row">
-  <div ng-show="reviews.length" class="list col-xs-6">
+
+  <div ng-show="reviews.length" class="col-md-6">
     <ul class="reviews-list">
       <li ng-repeat="item in reviews">
         <a ui-sref="reviews.display({ reviewId: item.reviewId })">{{ item.title }}</a>
       </li>
     </ul>
-
   </div>
 
 
-  <div class="new col-xs-6">
+  <div class="col-md-6">
     <h2>Create New Movie Review</h2>
     <form ng-submit="addReview()">
       <div class="form-group">
@@ -21,4 +21,5 @@
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
   </div>
+
 </div>

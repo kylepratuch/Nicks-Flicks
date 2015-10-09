@@ -37,7 +37,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
         controller: "HeadersCtrl",
       },
       'body':{
-        templateUrl: "partials/reviews.show.html",
+        templateUrl: "partials/reviews.html",
         controller: "ReviewsCtrl",
       },
       'display-review':{

@@ -2,6 +2,25 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+#header-border{
+  border-bottom:solid black 2px;
+  padding-bottom: 10px;
+}
+
+.new{
+  float:right;
+}
+
+.list{
+  width:40%;
+  float:left;
+}
+
+ul{
+  list-style-type: none;
+  text-decoration:underline;
+}
+
 .inverted{
   background-color:black;
   color:white;
